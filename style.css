@@ -27,10 +27,6 @@ body {
     color: grey;
 }
 
-canvas{
-    height: min(80vh, 350px);
-}
-
 #loader:after {
     font-family: serif;
     overflow: hidden;
@@ -40,18 +36,6 @@ canvas{
     animation: ellipsis steps(4, end) 1000ms infinite;
     content: "\2026";
     width: 0px;
-}
-
-@keyframes ellipsis {
-    to {
-        width: 1.25em;
-    }
-}
-
-@-webkit-keyframes ellipsis {
-    to {
-        width: 1.25em;
-    }
 }
 
 #downloadbtn {
@@ -66,4 +50,16 @@ canvas{
 #downloadbtn:active {
     margin: 14px 20px;
     border-bottom: 1px solid grey;
+}
+
+@keyframes ellipsis {
+    to {
+        width: 1.25em;
+    }
+}
+
+@-webkit-keyframes ellipsis {
+    to {
+        width: 1.25em;
+    }
 }
